@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Telegram Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToCacDM-_zyw_BifiQQT0R8NCns509RDZDuA&s" />
+
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <input type="text" placeholder="Search chats" class="search-input" id="searchInput">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <ul class="chat-list" id="chatList">
+                <!-- Chat list items will be dynamically added here -->
+            </ul>
+        </aside>
+        <main class="chat-area">
+            <header class="chat-header">
+                <div class="chat-header-info">
+                    <img src="/placeholder.svg" alt="" id="currentChatAvatar" class="current-chat-avatar">
+                    <div>
+                        <h2 id="currentChatName">Select a chat</h2>
+                        <span id="onlineStatus" class="online-status">offline</span>
+                    </div>
+                </div>
+                <div class="chat-header-actions">
+                    <button class="action-button" aria-label="Voice call">
+                        <i class="fas fa-phone-alt"></i>
+                    </button>
+                    <button class="action-button" aria-label="Video call">
+                        <i class="fas fa-video"></i>
+                    </button>
+                    <button class="action-button" aria-label="More options">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+            </header>
+            <div class="messages" id="messageArea">
+                <!-- Messages will be dynamically added here -->
+            </div>
+            <footer class="chat-footer">
+                <button class="attachment-button" aria-label="Attach file">
+                    <i class="fas fa-paperclip"></i>
+                </button>
+                <div class="message-input-container">
+                    <input type="text" placeholder="Type a message" id="messageInput" class="message-input">
+                    <i class="far fa-smile emoji-button"></i>
+                </div>
+                <button id="sendButton" class="send-button" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
